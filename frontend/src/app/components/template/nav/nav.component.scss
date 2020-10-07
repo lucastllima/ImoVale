@@ -1,0 +1,19 @@
+.sidenav {
+    background-color: #3f51b5;
+    width: 200px;
+    a {
+        color: #fff;
+    }
+    i {
+        padding-right: 10px;
+    }
+}
+
+.content {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.active-list-item {
+    background-color: #5766bb !important;
+}

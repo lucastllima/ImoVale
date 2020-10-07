@@ -1,0 +1,39 @@
+<mat-card>
+    <mat-card-title>
+        {{ pageTitle }}
+    </mat-card-title>
+    <form>
+        <mat-grid-list cols="2" rowHeight="100px">
+            <mat-grid-tile [rowspan]="1">
+                <mat-form-field class="full-width-field" appearance="outline">
+                    <mat-label>Título</mat-label>
+                    <input matInput placeholder="Digite o título" [(ngModel)]="propertie.title" name="title">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [rowspan]="1">
+                <mat-form-field class="full-width-field" appearance="outline">
+                    <mat-label>Tipo de Anúncio</mat-label>
+                    <mat-select [(ngModel)]="propertie.typeAnnouncement" name="typeAnnouncement">
+                        <mat-option value="venda">
+                            Venda
+                        </mat-option>
+                        <mat-option value="aluguel">
+                            Aluguel
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [rowspan]="1">
+                <mat-form-field class="full-width-field" appearance="outline">
+                    <mat-label>Preço</mat-label>
+                    <input matInput currencyMask type="text" placeholder="Digite o preço"
+                        [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" [(ngModel)]="propertie.price"
+                        name="price">
+                </mat-form-field>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+    <button mat-raised-button color="primary" (click)="submit()"> Salvar </button>
+
+    <button mat-raised-button (click)="cancel()"> Cancelar </button>
+</mat-card>

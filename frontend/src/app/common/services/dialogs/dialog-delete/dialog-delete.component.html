@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Remover Imóvel</h1>
+<div mat-dialog-content>
+  <p>Tem certeza que deseja remover o imóvel?</p>
+  <p>Título: {{ data.title }}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancel()" cdkFocusInitial>Cancelar</button>
+  <button mat-button (click)="confirm()" color="warn">Remover</button>
+</div>

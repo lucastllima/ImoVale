@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+}
+
+.edit {
+    margin-right: 10px;
+    i {
+        color: #d9cd26;
+    }
+}
+.delete {
+    cursor: pointer;
+    i {
+        color: #e35e6b;
+    }
+}
+.empty-table {
+    td {
+        text-align: center;
+        padding: 25px;
+    }
+}

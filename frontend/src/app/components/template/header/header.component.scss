@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-items: center;
+    a {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+    }
+    .logo {
+        width: 70px;
+    }
+    .title-group {
+        padding-left: 20px;
+    }
+}
