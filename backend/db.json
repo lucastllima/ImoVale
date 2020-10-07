@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "title": "Casa para Alugar no São Geraldo",
+      "typeAnnouncement": "aluguel",
+      "price": 4000,
+      "id": 1
+    },
+    {
+      "title": "Apartamento para vender na Piranga",
+      "typeAnnouncement": "venda",
+      "price": "250000",
+      "id": 2
+    },
+    {
+      "title": "Novo imóvel",
+      "typeAnnouncement": "venda",
+      "price": 125000,
+      "id": 3
+    },
+    {
+      "title": "Casa Nova para Alugar No Centro",
+      "typeAnnouncement": "aluguel",
+      "price": 450,
+      "id": 4
+    }
+  ]
+}
